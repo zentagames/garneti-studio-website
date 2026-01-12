@@ -1,186 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Garneti Studio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        a {
-            color: #0066cc;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garneti Studio — Mobile Game Studio</title>
+  <meta name="description" content="Garneti Studio develops short, memorable mobile games. New projects coming soon." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Garneti Studio" />
+  <meta property="og:description" content="We build short, memorable mobile games. New projects coming soon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garnetistudio.com" />
+
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#11182a;
+      --muted:#9fb0d0;
+      --text:#eaf0ff;
+      --accent:#7c5cff;
+      --accent2:#21d4fd;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 20% 10%, rgba(124,92,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(33,212,253,.18), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:42px;height:42px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+    }
+    nav a{color:var(--muted);margin-left:14px}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin-top:24px;
+      padding:42px 22px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(17,24,42,.55);
+    }
+    .title{font-size:42px;margin:10px 0}
+    .subtitle{color:var(--muted);max-width:600px}
+    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.05);
+      font-weight:600;
+    }
+    .btn.primary{
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border:none;
+      color:#07101f;
+    }
+    .section{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media(max-width:900px){.section{grid-template-columns:1fr}}
+    .card{
+      padding:18px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:rgba(17,24,42,.4);
+    }
+    footer{
+      margin-top:32px;
+      color:var(--muted);
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <strong>Garneti Studio</strong><br/>
+          <span style="color:var(--muted);font-size:12px;">Mobile Game Studio</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<h1>Privacy Policy</h1>
-<p><strong>Last Updated:</strong> Apr 20, 2024</p>
+    <section class="hero">
+      <h1 class="title">Short, memorable mobile games.</h1>
+      <p class="subtitle">
+        We develop easy-to-learn, hard-to-put-down mobile games.
+        New projects are coming soon.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#games">Games</a>
+        <a class="btn" href="#contact">Contact Us</a>
+      </div>
+    </section>
 
-<p>Garneti Studio("Garneti Studio" or "we," "us," "our") is a technology company specializing in the development and publishing of mobile games. This Privacy Policy aims to explain the collection, storage, sharing, and usage of your personal data in accordance with applicable laws in the countries where we operate.</p>
+    <section id="about" class="section">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>
+          Garneti Studio is a mobile game studio focused on fast, engaging gameplay experiences.
+          We iterate quickly from prototype to launch.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Focus</h3>
+        <p>
+          Strong hooks, smooth controls, clean UI,
+          monetization balanced with player experience.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Platforms</h3>
+        <p>iOS • Android</p>
+      </div>
+    </section>
 
-<p>This Privacy Policy applies to all users of our services, including websites, mobile applications, forums, blogs, offline services, marketing and advertising activities on various platforms. It encompasses the data we collect, how we use it, and why we gather such information.</p>
+   <section id="games" style="margin-top:28px;">
+  <div class="card">
+    <h3>Games</h3>
 
-<p>For the purposes of this Policy, "personal data" refers to any information that can directly or indirectly identify a particular natural person or household, including any other data or information considered to be "personal data" or "personally identifiable information."</p>
+    <div style="margin-top:16px; display:grid; gap:14px;">
+      <!-- Dough Jam -->
+      <div style="
+        padding:16px;
+        border:1px solid rgba(255,255,255,.1);
+        border-radius:14px;
+        background:rgba(17,24,42,.5);
+      ">
+        <strong style="font-size:16px;">Dough Jam</strong>
+        <p style="margin:6px 0; color:#9fb0d0;">
+          A satisfying casual mobile game about dough.
+        </p>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.garneti.doughjam"
+          target="_blank"
+          style="
+            display:inline-block;
+            margin-top:8px;
+            padding:10px 14px;
+            border-radius:10px;
+            background:linear-gradient(135deg,#7c5cff,#21d4fd);
+            color:#07101f;
+            font-weight:600;
+          "
+        >
+          View on Google Play →
+        </a>
+      </div>
 
-<p>In providing the services, Garneti Studio acts as a data controller. By downloading our mobile applications, accessing and/or playing our games, or interacting with our services, you consent to the processing of your personal data as described in this Privacy Policy. If you have any concerns about providing your data or its usage as explained here, you shouldn't use our games or other services.</p>
+      <!-- Coming Soon -->
+      <div style="
+        padding:16px;
+        border:1px dashed rgba(255,255,255,.15);
+        border-radius:14px;
+        color:#9fb0d0;
+      ">
+        More games coming soon.
+      </div>
+    </div>
 
-<hr>
+  </div>
+</section>
+    <section id="contact" style="margin-top:28px;">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>
+          For publishing, partnerships, or press inquiries:<br/>
+          <a href="mailto:garneti.game@gmail.com" style="text-decoration:underline;">
+            garneti.game@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
 
-<h2>1. PERSONAL DATA THAT WE COLLECT</h2>
+    <footer>
+      <div>© <span id="y"></span> Garneti Studio. All rights reserved.</div>
+    </footer>
+  </div>
 
-<p>We collect personal data either directly from you or from third-party companies who have obtained your consent or have a legal right to share such data with us. These third-party companies may include advertising platforms, partners, and data aggregators.</p>
-
-<h3>Personal Data Collected Directly from You</h3>
-<ul>
-    <li>Your first and last name</li>
-    <li>Your game username or alias</li>
-    <li>Email address or other contact details</li>
-    <li>Communications in the services</li>
-    <li>Information submitted for customer support or job applications</li>
-</ul>
-
-<h3>Device Data</h3>
-<p>We may collect identifiers such as IDFA and IDFV.</p>
-
-<h3>Analytics Data</h3>
-<p>Includes your interactions, time spent, features used, progress, ads watched, etc.</p>
-
-<h3>Location Data</h3>
-<p>Approximate location based on IP address.</p>
-
-<h3>Financial Data</h3>
-<p>We receive limited information related to in-app purchases.</p>
-
-<h3>Personal Data Collected from Third Parties</h3>
-<p>Includes data from app stores and social login providers like Facebook.</p>
-
-<hr>
-
-<h2>2. PURPOSES FOR PROCESSING OF YOUR PERSONAL DATA</h2>
-
-<ul>
-    <li>Optimization of games and personalized content</li>
-    <li>Operating and improving our services</li>
-    <li>User experience enhancement</li>
-    <li>Access control to service features</li>
-    <li>Identity verification</li>
-    <li>Surveys and feedback</li>
-    <li>Customer support</li>
-    <li>Fraud prevention</li>
-    <li>Compliance with legal obligations</li>
-    <li>Internal analytics and research</li>
-    <li>Advertising and marketing</li>
-    <li>Legal rights protection</li>
-</ul>
-
-<p>For EEA users, lawful bases include Legal Obligation, Contractual Necessity, Legitimate Interests, and Consent.</p>
-
-<hr>
-
-<h2>3. DISCLOSURE OF YOUR PERSONAL DATA</h2>
-
-<p>We may share your personal data with third parties for the purposes described in this Privacy Policy.</p>
-
-<h3>Business Transactions</h3>
-<p>Your data may be transferred during mergers or acquisitions.</p>
-
-<h3>Law Enforcement</h3>
-<p>We may disclose data to comply with legal obligations.</p>
-
-<h3>Other Users</h3>
-<p>Public profile data may be visible within communities.</p>
-
-<h3>Third-Party Service Providers</h3>
-<p>We work with partners providing analytics, hosting, marketing, and advertising services.</p>
-
-<h3>Advertising Partners</h3>
-<p>A list of advertising and analytics partners:</p>
-
-<ul>
-    <li><a href="https://policies.google.com/privacy">Google</a></li>
-    <li><a href="http://www.google.com/intl/en/policies/privacy/">Firebase</a></li>
-    <li><a href="https://policies.google.com/privacy/">Google Analytics</a></li>
-</ul>
-
-<hr>
-
-<h2>4. COOKIES AND PUSH NOTIFICATIONS</h2>
-
-<p>We use cookies to collect information. You can disable cookies in your browser settings but certain functions may not work properly.</p>
-
-<p>Push notifications may also be sent unless disabled through device settings.</p>
-
-<hr>
-
-<h2>5. YOUR DATA PROTECTION RIGHTS</h2>
-
-<p>You have various rights including:</p>
-
-<ul>
-    <li>Access to personal data</li>
-    <li>Correction</li>
-    <li>Deletion</li>
-    <li>Opt-out of advertising</li>
-    <li>Withdraw consent</li>
-    <li>Restriction and objection</li>
-    <li>Data portability</li>
-    <li>Opt-out of automated decision-making</li>
-</ul>
-
-<p>California residents have additional rights such as:</p>
-<ul>
-    <li>The right to opt-out of personal information sales</li>
-    <li>The right to non-discrimination</li>
-    <li>"Shine the Light" rights</li>
-</ul>
-
-<hr>
-
-<h2>6. INTERNATIONAL DATA TRANSFERS</h2>
-
-<p>Your data may be transferred globally. By using our services, you consent to international data transfers.</p>
-
-<hr>
-
-<h2>7. RETENTION OF YOUR PERSONAL DATA</h2>
-
-<p>We retain your data as long as necessary to provide services or comply with obligations.</p>
-
-<hr>
-
-<h2>8. SECURITY</h2>
-
-<p>We take appropriate measures to protect your data but no method is 100% secure.</p>
-
-<hr>
-
-<h2>9. CHILDREN</h2>
-
-<p>We do not knowingly collect data from children under 16 without consent.</p>
-
-<hr>
-
-<h2>10. CHANGES TO THIS PRIVACY POLICY</h2>
-
-<p>This policy may be updated periodically. Continued use of the service indicates acceptance of changes.</p>
-
-<hr>
-
-<h2>11. CONTACT US</h2>
-
-<p>If you have questions, contact us at: <a href="mailto:garneti.game@gmail.com">garneti.game@gmail.com</a></p>
-
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
